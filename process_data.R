@@ -20,4 +20,3 @@ polls <- map_dfr(file_names, read_csv, .id = "source")
 results <- read_csv("mt_2_results.csv")
 
 write_rds(polls, "forecast.rds")
-
